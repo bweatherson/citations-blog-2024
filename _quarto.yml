@@ -1,0 +1,56 @@
+project:
+  type: website
+
+website:
+  title: "Citations in Philosophy Journals"
+  site-url: https://brian.weatherson.org/citations-blog-2024/
+  description: "A blog about citations between philosophy journal articles in the 21st century."
+  navbar:
+    title: "Citations in Philosophy Journals" 
+    right:
+      - text: "Papers"
+        menu:
+          - text: "All Papers"
+            href: https://brian.weatherson.org/quarto/papers.html
+          - text: "Epistemology"
+            file: https://brian.weatherson.org/quarto/epist.html
+          - text: "Games and Decisions"
+            file: https://brian.weatherson.org/quarto/gdt.html
+          - text: "On Books"
+            file: https://brian.weatherson.org/quarto/books.html
+      - text: "Books"
+        menu: 
+           - text: "Normative Externalism"
+             href: https://brian.weatherson.org/ne/
+           - text: "A History of Philosophy Journals"
+             href: https://lda.weatherson.org/
+           - text: "Knowledge: A Human Interest Story"
+             href: https://brian.weatherson.org/kahis/
+      - text: "CV"
+        file: cv.qmd
+      - text: "Teaching Notes"
+        file: teaching.qmd
+    tools:
+      - icon: google
+        href: https://scholar.google.com/citations?user=rz5RF8kAAAAJ&hl=en&oi=ao
+      - icon: mailbox
+        href: "mailto: brian@weatherson.org"
+format: 
+    html:
+      theme: 
+        light: 
+          - solar
+          - html-fonts-light.scss
+          - book-light-defaults.scss
+        dark:
+          - solar
+          - html-fonts.scss 
+          - dark-table.scss
+      linestretch: 1.5
+      image-height: "50"
+      include-in-header:
+        - text: |
+            <link rel="stylesheet" href="https://use.typekit.net/uzz2drx.css">
+      mainfont: "ff-scala-sans-pro, sans-serif"
+      html-math-method: mathjax
+      self-contained: false

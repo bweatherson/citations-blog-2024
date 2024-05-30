@@ -1,0 +1,58 @@
+# options specified here will apply to all posts in this folder
+
+# freeze computational output
+# (see https://quarto.org/docs/projects/code-execution.html#freeze)
+freeze: true
+
+# Enable banner style title blocks
+title-block-banner: true
+
+bibliography: ../../brian-quarto.bib
+csl: ../../chicago-with-note.csl
+
+format: 
+    docx:
+      reference-doc: ../../quarto-articles-template.docx
+      toc: false
+      number-sections: true
+    html:
+      toc: true
+      toc-depth: 3
+      toc-location: left
+      toc-title: "Sections"
+      reference-location: margin
+      appendix-cite-as: bibtex
+      pagetitle: "{{< meta title >}}"
+    pdf:
+      classoption: twoside
+      geometry: "left=1in,
+                 right=1in,
+                 top=0.8in,
+                 bottom=0.8in,
+                 paperheight=9.5in,
+                 paperwidth=6.5in,
+                 includemp=TRUE,
+                 marginparwidth=0in,
+                 marginparsep=0in"
+      mathspec: false
+      mathfont: Garamond-Math
+      mainfont: EB Garamond Math
+      sansfont: Europa-Bold
+      mainfontoptions: 
+        - ItalicFont=EB Garamond Italic
+        - BoldFont=EB Garamond Bold
+      fontsize: 10pt
+      indent: true
+      linkcolor: black
+      urlcolor: black
+      colorlinks: false
+      linestretch: 1.1
+      link-citations: true
+      keep-tex: true
+      pdf-engine: xelatex
+      include-in-header:
+        file: quarto2024.tex
+      date-format: "DD-MMM-YYYY"
+number-sections: true
+number-depth: 3
+

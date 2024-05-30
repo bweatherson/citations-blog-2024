@@ -1,0 +1,40 @@
+/*-- scss:defaults --*/
+
+$sidebar-bg: #F9FFFF;
+$navbar-bg: #FFFFF9;
+$body-bg: #F9FFFF;
+$body-color: #000;
+$modal-content-bg: #FFFFF9;
+$popover-bg: #FFFFF9;
+$dropdown-bg: #fdf6e3;
+$input-bg: #FFFFF9;
+$dropdown-link-hover-color:         rgba(255, 255, 255, .75) !default;
+$dropdown-link-hover-bg:            #fdf6e3  !default;
+$table-border-color:    white !default;
+$table-dark-bg:              #fdf6e3 !default;
+$input-group-addon-bg: #fdf6e3;
+$component-active-color:   black;
+
+/*-- scss:rules --*/
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    border-top: 0px solid black;
+}
+table th, td, tr {
+    padding: -1px -1px;
+    border-top: solid 2px #F9FFFF;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid 2px #F9FFFF;
+    background-color: #F9FFFF;
+}
+
+
+
+/*caption {
+  font-size: smaller;
+}*/

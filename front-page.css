@@ -1,0 +1,14 @@
+table {
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 0;
+    border-top: 2px solid white;
+}
+table th, td, tr {
+    padding: 2px 2px;
+    border-top: dashed 2px white;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    background-color: white;
+}
